@@ -21,6 +21,11 @@ my $builder = Module::Build->new(
     create_makefile_pl => 'small',
     create_readme      => 1,
     create_license     => 1,
+    meta_merge => {
+        resources => {
+            repository => 'https://github.com/mattlaw/Path-Map',
+        },
+    },
 );
 
 $builder->create_build_script;
